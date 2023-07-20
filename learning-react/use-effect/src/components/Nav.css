@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(80, 79, 79, 0.7);
+    padding: 10px 50px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+a{
+  text-decoration: none;
+}
+
+.active {
+    color: blue;
+}
