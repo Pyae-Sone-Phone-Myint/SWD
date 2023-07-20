@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+@import "../node_modules/remixicon/fonts/remixicon.css";
+
+@import "../node_modules/animate.css/animate.min.css";
+
+// CUSTOMIZE CSS
+$font-family-sans-serif: "Poppins", sans-serif;
+$body-bg: hsl(19, 100%, 96%);
+
+$primary: hsl(19, 64%, 54%);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// CUSTOM CSS
+
+body {
+
+  overflow-x: hidden;
+}
+
+.title {
+  font-family: "Lora", serif;
+  color: hsl(19, 16%, 15%);
+}
+
+.subtitle {
+  font-family: "Dancing Script", cursive;
+  color: $primary;
+}
+
+.text {
+  color: hsl(19, 16%, 35%);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar {
+  background-color: $body-bg;
+}
+
+.title-box img {
+  width: 2.8rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.3rem;
+  border-radius: 25rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(19, 64%, 52%);
+}
+
+.btn i {
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+
+.btn:hover i {
+  transform: translateX(0.3rem);
+}
+
+.dish-box {
+    background-color: hsl(19, 100%, 97%);
+    position: relative;
+}
+
+.dish-box img {
+    margin-top: -60px;
+    transition: transform .3s;
+}
+
+.dish-box:hover img {
+    transform: translateY(-0.3rem) scale(1.05);
+}
+
+.cash {
+    color: $primary;
+}
+
+.spinach {
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.send-box {
+  background-color: hsl(19, 16%, 15%);
+  position: relative;
+}
+
+.subscribe {
+  background-color: hsl(19, 100%, 97%);
+  padding:  1rem;
+  border-radius: 25rem;
+  position: relative;
+}
+
+.subscribe input:focus-visible, .subscribe input {
+  background-color: none;
+  border: none;
+  outline: none;
+}
+
+.subscribe a{
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: .7rem 1.5rem;
+}
+
+.send-box > img {
+  width: 3.6rem;
+  position: absolute;
+  bottom: -40px;
+  right: 15%;
+  transform: rotate(45deg);
+}
+
+.footer__info {
+  position: relative;
+}
+
+.footer__info .title{
+  font-size: 20px;
+}
+
+.footer__info .title img{
+  width: 30px;
+}
+
+
+.footer__info .spinach {
+  position: absolute;
+  right: 5.5rem;
+  // bottom: .5rme;
+}
+
+
+.footer__title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer__media ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.social {
+  position: relative;
+}
+
+.social-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.social img {
+  position: absolute;
+  width: 30px;
+transform: rotate(-60deg);
+right: 5.5rem;
+bottom: -4.8rem;
+}
+
+.copyright {
+  font-size: 15px;
+  color: hsl(19, 8%, 55%);
+}
+
+.payment__card {
+  display: flex;
+  gap: 20px;
+}
+
+.payment__card img{
+  width: 35px;
+}
