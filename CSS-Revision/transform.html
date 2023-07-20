@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        border: 2px solid black;
+        width: 100%;
+        height: 600px;
+        margin: 20px;
+        overflow: hidden;
+        /* padding: 200px; */
+        position: relative;
+      }
+
+      .img {
+        width: 200px;
+        /* position: absolute; */
+        perspective: 1000px;
+        transform: rotate(0) scale(0);
+        transition: 1s ease-in;
+        left: 50%;
+        top: 20%;
+      }
+
+        .img1.active {
+        transform: rotate(-360deg) scale(1.5);
+        }
+      .box .img:nth-child(2) {
+        transform: rotate(-20deg);
+        display: none;
+      }
+      .box .img:nth-child(3) {
+        transform: rotate(-40deg);
+        display: none;
+      }
+
+      .btn {
+        padding: 10px 12px;
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img
+        class="img img1"
+        src="https://i.pinimg.com/736x/0a/90/a6/0a90a6e7d564f578a6853b4bd8c798f2.jpg"
+        alt=""
+      />
+      <img
+        class="img img2"
+        src="https://i.pinimg.com/736x/0a/90/a6/0a90a6e7d564f578a6853b4bd8c798f2.jpg"
+        alt=""
+      />
+      <img
+        class="img img3"
+        src="https://i.pinimg.com/736x/0a/90/a6/0a90a6e7d564f578a6853b4bd8c798f2.jpg"
+        alt=""
+      />
+
+      <button type="button" class=" btn ">Click me</button>
+    </div>
+
+    <script>
+      const btn = document.querySelector(".btn")
+      const img1 = document.querySelector(".img1")
+      btn.addEventListener('click', function(){
+        img1.classList.toggle("active")
+      })
+    </script>
+  </body>
+</html>

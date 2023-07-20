@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead {
+
+        }
+        tbody {
+
+        }
+        th {
+            border: 2px solid rgb(231, 231, 231);
+            background-color: skyblue;
+            padding: 13px 15px;
+        }
+        tr {
+
+        }
+        tr:nth-child(odd) {
+            background-color: rgb(116, 32, 201);
+        }
+        tr:nth-child(odd):hover {
+            background-color: rgb(137, 54, 219);
+        }
+        td {
+            border: 2px solid rgb(231, 231, 231);
+            padding: 13px 15px;
+            /* background-color: rgb(100, 87, 209); */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Job</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Eric</td>
+                <td>0954687512</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mike</td>
+                <td>0956887521</td>
+                <td>Mmarketing</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>David</td>
+                <td>0954478623</td>
+                <td>Team Manager</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Eric</td>
+                <td>0954687512</td>
+                <td rowspan="2">Developer</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Mike</td>
+                <td>0956887521</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>David</td>
+                <td>0954478623</td>
+                <td>Team Manager</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>6 staff</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "zen";
+        src: url(./font/ZenDots-Regular.ttf);
+      }
+      body {
+        counter-reset: section;
+        font-family: zen;
+      }
+
+      h3::before {
+        counter-increment: section;
+        content: "Skill " counter(section) " : ";
+      }
+
+      ol {
+        counter-reset: olsection;
+        list-style-type: none;
+      }
+
+      li::before {
+        counter-increment: olsection;
+        content: counters(olsection, ".") " ";
+      }
+
+      .header {
+        background: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+        text-align: center;
+        font-size: 5em;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      .container {
+          width: 200px;
+          height: 300px;
+          object-fit: cover;
+        object-position: -115px 50px;
+    }
+    </style>
+  </head>
+  <body>
+      <img
+        class="container"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzzYEKp4VmugRLVdHMNu-pwOv5C-cXtK1aow&usqp=CAU"
+        width="auto" height="auto"
+        alt=""
+      />
+    <h1>This is my skills till I have.</h1>
+    <h3>HTML</h3>
+    <h3>CSS</h3>
+    <h3>JavaScript</h3>
+    <h3>Typing fast</h3>
+    <h3>Negotiation</h3>
+
+    <hr />
+
+    <ol>
+      <li>item</li>
+      <li>
+        item
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>
+            item
+            <ol>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+            </ol>
+          </li>
+          <li>item</li>
+        </ol>
+      </li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+
+    <h1 class="header">Rainbow Color</h1>
+
+    <hr />
+
+  </body>
+</html>

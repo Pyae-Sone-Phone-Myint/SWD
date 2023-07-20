@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./css/app.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .btn {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        position: relative;
+        z-index: 3;
+        cursor: pointer;
+      }
+
+      .sidebar {
+        background-color: gray;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+      }
+      /* .bg {
+        height: 100vh;
+        width: calc(100% - 200px);
+        background-color: black;
+        position: fixed;
+        right: 0;
+        top: 0;
+      } */
+
+      .sidebar.open::after {
+        content: "";
+        height: 100vh;
+        width: calc(100vw + 200px);
+        background-color: rgba(94, 94, 94, 0.127);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -3;
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+      .honey {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Show</button>
+    <h1>Min Ga Lar Par</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+      praesentium totam nemo mollitia optio, ipsa aspernatur, quisquam
+      asperiores alias corporis earum? Voluptate neque voluptatem ipsa
+      voluptatibus a, architecto velit aut.
+    </p>
+    <div class="container">
+      <div class="sidebar"></div>
+      <div class="bg"></div>
+    </div>
+
+    <figure class="imghvr-zoom-out-left">
+      <img class="honey" src="https://www.shwengwegames.com/wp-content/uploads/2021/10/1200719edb1fb0768aad5c3cfae0f3c49ec94b4b.jpg" />
+      <figcaption>
+        <h3>Honey Nway Oo</h3>
+        <p>She is an amazing lady for her age. I really love her and she gets my full supports.</p>
+        <button class=" btn">Click to Donate</button>
+      </figcaption>
+    </figure>
+
+    <script>
+      const btn = document.querySelector(".btn");
+      const sidebar = document.querySelector(".sidebar");
+      btn.addEventListener("click", function () {
+        sidebar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
