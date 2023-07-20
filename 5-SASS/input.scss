@@ -1,0 +1,62 @@
+@use "header";
+
+// Variable
+
+$primary: "blue";
+$text-color: "balck";
+
+.bg-primary {
+  color: $text-color;
+  background-color: $primary;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.border-primary {
+  border-color: $primary;
+  color: $text-color;
+}
+
+// Nesting
+
+.navbar {
+  &:hover {
+    box-shadow: 0 0 5px;
+  }
+  .nav-brand {
+    color: $text-color;
+  }
+  .navbar-nav {
+    color: $text-color;
+    .nav-item {
+      border: 1px solid black;
+      .nav-link {
+        color: $text-color;
+      }
+      &:hover,
+      &.active {
+        background-color: $primary;
+        color: white;
+      }
+    }
+  }
+}
+
+@import "footer";
+
+@mixin btn($theme: "black") {
+  background-color: $theme;
+  color: white;
+  border: 2px solid $theme;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  @include btn(blue);
+}
+
+.btn-secondary {
+  @include btn(gray);
+}

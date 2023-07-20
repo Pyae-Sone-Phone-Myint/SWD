@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./css/invoice.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="row g-3 border rounded py-3 px-3 mt-3">
+            <div class="col">
+              <label class="form-label" for="">Font Family</label>
+              <select name="" class="form-select" id="fontFamily">
+                <option value="">Select Font</option>
+              </select>
+            </div>
+            <div class="col">
+              <label class="form-label" for="">Select Color</label>
+              <input
+                id="color"
+                type="color"
+                class="form-control form-control-color w-100"
+              />
+            </div>
+            <div class="col">
+              <label class="form-label" for="">Fontsize</label>
+              <input
+                id="fontSize"
+                min="0"
+                max="100"
+                value="16"
+                type="range"
+                class="form-range"
+              />
+            </div>
+            <div class="col-12">
+              <div class="d-flex justify-content-between mb-3">
+                <label class="form-label" for="">Say Something</label>
+                <div class=" d-flex align-item-center">
+                    <button class=" btn btn-outline-dark btn-sm me-2" id="speechToText">
+                        <i class=" bi bi-mic"></i>
+                    </button>
+                    <button class=" btn btn-outline-dark btn-sm me-2" id="textToSpeech">
+                        <i class=" bi bi-volume-up"></i>
+                    </button>
+                    <div class=" mb-0 d-flex align-item-center">Count: <span id="count">0</span></div>
+                </div>
+              </div>
+              <textarea
+                name=""
+                id="text"
+                rows="5"
+                class="form-control"
+              ></textarea>
+            </div>
+          </div>
+          <div id="output" class="mt-3 text-center"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/tc.js"></script>
+  </body>
+</html>

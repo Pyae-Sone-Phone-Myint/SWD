@@ -1,0 +1,19 @@
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+$component-active-bg: #000;
+$enable-rounded: false;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.dropdown-icon {
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+tr:hover .dropdown-icon {
+    transform: scale(1)
+}
+
+.bg-transparent-50{
+    background-color: rgba(0,0,0,50%)
+}

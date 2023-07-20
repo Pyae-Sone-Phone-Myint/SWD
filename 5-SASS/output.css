@@ -1,0 +1,59 @@
+.header {
+  color: black;
+  border: 1px solid black;
+}
+
+.bg-primary {
+  color: "balck";
+  background-color: "blue";
+}
+
+.text-primary {
+  color: "blue";
+}
+
+.border-primary {
+  border-color: "blue";
+  color: "balck";
+}
+
+.navbar:hover {
+  box-shadow: 0 0 5px;
+}
+.navbar .nav-brand {
+  color: "balck";
+}
+.navbar .navbar-nav {
+  color: "balck";
+}
+.navbar .navbar-nav .nav-item {
+  border: 1px solid black;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: "balck";
+}
+.navbar .navbar-nav .nav-item:hover, .navbar .navbar-nav .nav-item.active {
+  background-color: "blue";
+  color: white;
+}
+
+.footer {
+  background-color: "blue";
+  color: white;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  padding: 10px 20px;
+}
+
+.btn-secondary {
+  background-color: gray;
+  color: white;
+  border: 2px solid gray;
+  padding: 10px 20px;
+}
+
+/*# sourceMappingURL=output.css.map */

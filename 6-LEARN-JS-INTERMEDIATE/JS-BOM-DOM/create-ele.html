@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span>San kyi tar</span>
+    hello min ga lar par
+
+      <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>orange</li>
+        <li>mango</li>
+      </ul>
+    <script>
+      const ul = document.querySelector('ul');
+      console.log(ul.previousElementSibling)
+      console.log(ul.previousSibling)
+      ul.previousSibling.data = 'bbbb'
+      ul.previousElementSibling.innerText = 'aaa'
+
+
+      const textNode = document.createTextNode("cccc")
+
+      ul.before(textNode)
+      // ul.after(textNode)
+      // const box = document.createDocumentFragment();
+
+      // const h1 = document.createElement("h1");
+      // const p = document.createElement("p");
+
+      // h1.innerText = "Min Ga Lar Par";
+      // p.innerText = "San kyi tar par";
+
+      // box.append(h1);
+      // box.append(p);
+
+      // false && document.body.append(box);
+
+      // document.body.append(box);
+
+      //   function createLi(text) {
+      //     const li = document.createElement("li");
+      //     li.innerText = text;
+      //     return li;
+      //   }
+      //   const ul = document.createElement("ul");
+      //   document.body.append(ul);
+
+      //   ul.append(createLi("Apple"))
+      //   ul.append(createLi("Orange"))
+      //   ul.append(createLi("Mango"))
+      //   ul.append(createLi("Banana"))
+      //   ul.append(createLi("Kiwi"))
+
+      // create element
+      //   const h1 = document.createElement("h1");
+
+      //   h1.innerText = "Min Ga Lar Par";
+      //   const p = document.createElement("p");
+      //   p.innerText =
+      //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga beatae officia nam debitis quos, vitae quis quibusdam. Similique accusamus soluta sunt assumenda in eligendi necessitatibus ut qui. Neque, iusto consequuntur.";
+
+      //   const a = document.createElement("a");
+      //   a.innerHTML = "Google";
+      //   a.href = "https://google.com";
+      //   a.target = "_blank";
+
+      //   const img = document.createElement("img")
+      //   img.src = "./Honey.jpg"
+
+      //   // put element to body
+      //   document.body.append(h1);
+      //   document.body.append(p);
+      //   document.body.append(a);
+      //   document.body.append(img);
+    </script>
+  </body>
+</html>
